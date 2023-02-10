@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import { useDispatch } from "react-redux"
+import { useDispatch, useDispatch } from "react-redux";
 import { fetchReadPokemos } from "../redux/thunks/homethunk";
 
 const HomePage = () => {
-    const dispatch = useDispatch();
+    const useDispatch = useDispatch();
 
     useEffect(() => {
         dispatch(fetchReadPokemos());

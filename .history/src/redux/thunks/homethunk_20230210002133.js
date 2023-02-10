@@ -4,15 +4,13 @@ import axiosInstance from "../../configs/axiosInstance";
 export const fetchReadPokemos = createAsyncThunk(
     'home/fetchReadPokemos',
     async (_, { rejectWithValue }) => {
-      
         try {
           const options = {
             method: 'GET',
-            url: `/api/danzas`
+            url: `ability?populate=name,url`
           };
-          const  {data}  = await axiosInstance(options);
-          console.log(data.data)
-          return data.data ?? [];
+          const { ability } = await axiosInstance(options);
+          return ability.ability ?? [];
         } catch (error) {
           console.log(error);
           return rejectWithValue(error);

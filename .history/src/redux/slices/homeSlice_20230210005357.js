@@ -4,7 +4,7 @@ import { fetchReadPokemos } from "../thunks/homeThunk";
 const initialState = {
     loading: false,
     error: {},
-    pokemos: []
+    pokemos: {}
 
 };
 
@@ -24,7 +24,7 @@ const homeSlice = createSlice({
     builder.addCase(fetchReadPokemos.rejected, (state, { payload }) => {
       state.loading = false;
       state.error = payload;
-      state.pokemos = [];
+      state.pokemos = {};
     });
 }
 });

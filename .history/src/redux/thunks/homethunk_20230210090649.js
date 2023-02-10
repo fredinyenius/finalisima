@@ -11,8 +11,8 @@ export const fetchReadPokemos = createAsyncThunk(
             url: `/api/danzas`
           };
           const  {data}  = await axiosInstance(options);
-          console.log(data.data)
-          return data.data ?? [];
+          console.log(data)
+          return data ?? [];
         } catch (error) {
           console.log(error);
           return rejectWithValue(error);

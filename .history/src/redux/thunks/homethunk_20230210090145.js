@@ -8,11 +8,11 @@ export const fetchReadPokemos = createAsyncThunk(
         try {
           const options = {
             method: 'GET',
-            url: `/api/danzas`
+            url: `/pokemon/ditto`
           };
           const  {data}  = await axiosInstance(options);
-          console.log(data.data)
-          return data.data ?? [];
+          console.log(data)
+          return data ?? [];
         } catch (error) {
           console.log(error);
           return rejectWithValue(error);
