@@ -4,7 +4,7 @@ import { fetchReadPokemos } from "../redux/thunks/homethunk";
 
 const HomePage = () => {
     const dispatch = useDispatch();
-    const { loading, Pokemos } = useHome();
+    const { l } = useHome();
   
     useEffect(() => {
       dispatch(fetchReadPokemos());
@@ -13,8 +13,9 @@ const HomePage = () => {
     return (
       <>
         {loading && <LoadersModal />}
-        <HomeHero Pokemos={Pokemos} />
+        <HomeHero heroProducts={heroProducts} />
         {/* <HomeBestSellers /> */}
+        <ContactMeans />
       </>
     );
   };
