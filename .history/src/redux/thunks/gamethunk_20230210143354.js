@@ -1,8 +1,8 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axiosInstance from "../../configs/axiosInstance";
 
-export const fetchReadPokemos = createAsyncThunk(
-    'home/fetchReadPokemos',
+export const fetchReadGame = createAsyncThunk(
+    'game/fetchReadGame',
     async (_, { rejectWithValue }) => {
       
         try {

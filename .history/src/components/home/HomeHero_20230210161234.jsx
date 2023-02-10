@@ -3,10 +3,6 @@
 const HomeHero = ({pokemos}) => {
     return ( 
       <div className="bottom">
-        <br />
-        <br />
-        <br />
-        
       <h1>ACTORES DE GUERRA DE TRONOS</h1>
 
       <ul>

@@ -8,7 +8,7 @@ export const fetchReadPokemos = createAsyncThunk(
         try {
           const options = {
             method: 'GET',
-            url: `/Characters`
+            url: `/`
           };
           const  {data} = await axiosInstance(options);
           console.log(data)
