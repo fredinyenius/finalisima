@@ -10,9 +10,9 @@ export const fetchReadGames = createAsyncThunk(
             method: 'GET',
             url: `/Continents`
           };
-          const  {data} = await axiosInstance(options);
-          console.log(data.data)
-          return data ?? [] ;
+          const  data = await axiosInstance(options);
+          console.log(data)
+          return data ;
         } catch (error) {
           console.log(error);
           return rejectWithValue(error);

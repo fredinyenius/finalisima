@@ -11,8 +11,8 @@ export const fetchReadGames = createAsyncThunk(
             url: `/Continents`
           };
           const  {data} = await axiosInstance(options);
-          console.log(data.data)
-          return data ?? [] ;
+          console.log(data)
+          return data ;
         } catch (error) {
           console.log(error);
           return rejectWithValue(error);

@@ -1,6 +1,4 @@
-
-
-const HomeHero = ({pokemos}) => {
+const HomeHero = ({games}) => {
     return ( 
       <div >
         <br />
@@ -11,7 +9,7 @@ const HomeHero = ({pokemos}) => {
 
       <ul>
         {
-          pokemos.map(item =>(
+          games.map(item =>(
             <li key={item.id}>{item.fullName} 
             <br />
             <br />

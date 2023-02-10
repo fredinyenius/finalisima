@@ -13,7 +13,7 @@ export const primaryRoute = createBrowserRouter([
         element: <HomePage/>
       },
       {
-        path: 'productos',
+        path: 'game',
         element: <GamePage/>
       },
       {

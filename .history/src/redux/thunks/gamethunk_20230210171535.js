@@ -2,8 +2,10 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axiosInstance from "../../configs/axiosInstance";
 
 export const fetchReadGames = createAsyncThunk(
+  
     'game/fetchReadGames',
     async (_, { rejectWithValue }) => {
+      console.log('azul')
       
         try {
           const options = {
@@ -11,8 +13,8 @@ export const fetchReadGames = createAsyncThunk(
             url: `/Continents`
           };
           const  {data} = await axiosInstance(options);
-          console.log(data.data)
-          return data ?? [] ;
+          console.log(data)
+          return data ;
         } catch (error) {
           console.log(error);
           return rejectWithValue(error);

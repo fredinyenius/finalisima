@@ -12,7 +12,7 @@ export const fetchReadGames = createAsyncThunk(
           };
           const  {data} = await axiosInstance(options);
           console.log(data.data)
-          return data ?? [] ;
+          return data ;
         } catch (error) {
           console.log(error);
           return rejectWithValue(error);

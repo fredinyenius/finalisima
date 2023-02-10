@@ -8,11 +8,11 @@ export const fetchReadGames = createAsyncThunk(
         try {
           const options = {
             method: 'GET',
-            url: `/Continents`
+            url: `/pokemon/ditto`
           };
           const  {data} = await axiosInstance(options);
-          console.log(data.data)
-          return data ?? [] ;
+          console.log(data)
+          return data ;
         } catch (error) {
           console.log(error);
           return rejectWithValue(error);

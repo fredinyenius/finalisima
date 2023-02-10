@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import PrimaryLayout from "../layouts/PrimaryLayout";
 import HomePage from "../page/homePage";
-import GamePage from "../page/gamePage";
 
 export const primaryRoute = createBrowserRouter([
   {
@@ -13,7 +12,7 @@ export const primaryRoute = createBrowserRouter([
         element: <HomePage/>
       },
       {
-        path: 'productos',
+        path: 'game',
         element: <GamePage/>
       },
       {
