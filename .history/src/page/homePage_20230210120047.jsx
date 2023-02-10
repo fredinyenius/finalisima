@@ -13,9 +13,9 @@ const HomePage = () => {
     }, []);
   
     return (
-     
+      <>
         <HomeHero />
-      
+      </>
     );
   };
   

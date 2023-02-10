@@ -13,9 +13,11 @@ const HomePage = () => {
     }, []);
   
     return (
-     
-        <HomeHero />
-      
+      <>
+        {loading && <LoadersModal />}
+        <HomeHero Pokemos={Pokemos} />
+        {/* <HomeBestSellers /> */}
+      </>
     );
   };
   
