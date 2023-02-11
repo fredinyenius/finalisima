@@ -1,14 +1,14 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axiosInstance from "../../configs/axiosInstance";
 
-export const fetchReadActores = createAsyncThunk(
-    'actor/fetchReadActores',
+export const fetchReadPokemos = createAsyncThunk(
+    'home/fetchReadPokemos',
     async (_, { rejectWithValue }) => {
       
         try {
           const options = {
             method: 'GET',
-            url: `/Characters`
+            url: `/Characters?populate=firstName,lastName,imageUrl`
           };
           const  {data} = await axiosInstance(options);
           console.log(data)

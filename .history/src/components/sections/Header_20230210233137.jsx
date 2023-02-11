@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { BsList, BsXCircle } from "react-icons/bs";
 import { Link, NavLink } from 'react-router-dom';
-import dragon from '../../assets/img/dragon.png';
+import logoEAKON from '../../assets/img/logo-eakon.webp';
 
 const Header = () => {
   const header = useRef();
@@ -33,7 +33,7 @@ const Header = () => {
       <nav className="nav">
         <div className="container f-elements f-elements--header">
           <Link to="/">
-            <img src={dragon} alt="Logo de EAKON" className="nav__logo" width="32" height="32" />
+            <img src={logoEAKON} alt="Logo de EAKON" className="nav__logo" width="32" height="32" />
           </Link>
           <div
             className="modal modal--header"
@@ -46,20 +46,20 @@ const Header = () => {
             >
               <li>
                 <NavLink
-                  to="/dragones"
+                  to="/productos"
                   className={({ isActive }) => isActive ? "list__link list__link--active" : "list__link"}
                   onClick={hideMenu}
                 >
-                  Dragones
+                  Productos
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/actores"
+                  to="/servicios"
                   className={({ isActive }) => isActive ? "list__link list__link--active" : "list__link"}
                   onClick={hideMenu}
                 >
-                  Actores
+                  Servicios
                 </NavLink>
               </li>
               <li>

@@ -3,7 +3,6 @@ import PrimaryLayout from "../layouts/PrimaryLayout";
 import HomePage from "../page/homePage";
 import GamePage from "../page/gamePage";
 import ActorPage from "../page/ActorPage";
-import MapaPage from "../page/MapaPage";
 
 export const primaryRoute = createBrowserRouter([
   {
@@ -15,16 +14,16 @@ export const primaryRoute = createBrowserRouter([
         element: <HomePage/>
       },
       {
-        path: 'dragones',
+        path: 'productos',
         element: <GamePage/>
       },
       {
-        path: 'actores',
+        path: 'servicios',
         element: <ActorPage/>
       },
       {
         path: 'nosotros',
-        element: <MapaPage/>
+        element: <h1>Nosotros</h1>
       },
       {
         path: 'contacto',

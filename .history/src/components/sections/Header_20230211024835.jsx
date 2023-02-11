@@ -46,20 +46,20 @@ const Header = () => {
             >
               <li>
                 <NavLink
-                  to="/dragones"
+                  to="/productos"
                   className={({ isActive }) => isActive ? "list__link list__link--active" : "list__link"}
                   onClick={hideMenu}
                 >
-                  Dragones
+                  Productos
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/actores"
+                  to="/servicios"
                   className={({ isActive }) => isActive ? "list__link list__link--active" : "list__link"}
                   onClick={hideMenu}
                 >
-                  Actores
+                  Servicios
                 </NavLink>
               </li>
               <li>

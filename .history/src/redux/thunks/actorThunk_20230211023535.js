@@ -10,9 +10,9 @@ export const fetchReadActores = createAsyncThunk(
             method: 'GET',
             url: `/Characters`
           };
-          const  {data} = await axiosInstance(options);
+          const  data = await axiosInstance(options);
           console.log(data)
-          return data ?? [];
+          return data ;
         } catch (error) {
           console.log(error);
           return rejectWithValue(error);

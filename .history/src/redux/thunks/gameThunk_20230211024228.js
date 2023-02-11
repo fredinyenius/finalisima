@@ -1,18 +1,18 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axiosInstance from "../../configs/axiosInstance";
 
-export const fetchReadActores = createAsyncThunk(
-    'actor/fetchReadActores',
+export const fetchReadGames = createAsyncThunk(
+    'game/fetchReadGames',
     async (_, { rejectWithValue }) => {
       
         try {
           const options = {
             method: 'GET',
-            url: `/Characters`
+            url: `/Continents`
           };
           const  {data} = await axiosInstance(options);
           console.log(data)
-          return data ?? [];
+          return data ?? ;
         } catch (error) {
           console.log(error);
           return rejectWithValue(error);
