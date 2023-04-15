@@ -7,20 +7,20 @@ import HomeHero from "../components/home/HomeHero";
 import { fetchReadPokemos } from "../redux/thunks/homeThunk";
 
 const HomePage = () => {
-    //const navigate = useNavigate();
+    const navigate = useNavigate();
     const dispatch = useDispatch();
     const { pokemos } = useHome();
-    //const { user } = useAuth();
+    const { user } = useAuth();
 
 
-    //useEffect(() => {
-    //  if (user === false) {
-    //    navigate('/login');
-    //  }
-    //}, [user]);
+    useEffect(() => {
+      if (user === false) {
+        navigate('/login');
+      }
+    }, [user]);
   
     //return (<h1>HomePage</h1>);
-  //};
+  };
     useEffect(() => {
       dispatch(fetchReadPokemos());
     }, []);
@@ -32,5 +32,5 @@ const HomePage = () => {
       
     );
   
-    };
+  
   export default HomePage;
