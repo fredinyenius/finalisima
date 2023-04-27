@@ -32,18 +32,20 @@ const Header = () => {
     <header
       className="header"
       ref={header}
-    > <ul>
-    <li>
-      <NavLink to="/">Inicio</NavLink>
-    </li>
-    <li>
-      {user ?
-        <button onClick={() => { setUser(false) }}>Logout</button>
-        :
-        <NavLink to="/login">Login</NavLink>
-      }
-    </li>
-  </ul>
+    > <nav>
+    <ul>
+      <li>
+        <NavLink to="/">Inicio</NavLink>
+      </li>
+      <li>
+        {user ?
+          <button onClick={() => { setUser(true) }}>Logout</button>
+          :
+          <NavLink to="/login">Login</NavLink>
+        }
+      </li>
+    </ul>
+    </nav>
       <nav className="nav">
         <div className="container f-elements f-elements--header">
           <Link to="/">
@@ -54,7 +56,6 @@ const Header = () => {
             ref={modal}
             onClick={hideMenu}
           >
-            
             <ul
               className="list list--header f-elements f-elements--responsive f-elements--center gap-md"
               onClick={e => e.stopPropagation()}
@@ -102,7 +103,6 @@ const Header = () => {
                 <BsXCircle />
               </li>
             </ul>
-            
 
           </div>
           <div className="f-elements f-elements--center">
@@ -120,7 +120,10 @@ const Header = () => {
               onClick={showMenu}
             >
               <BsList />
-            </button>         
+            </button>
+          <div className="f-elements f-elements--center">
+          
+          </div>
           </div>
           <div className="f-elements f-elements--center">
           <NavLink

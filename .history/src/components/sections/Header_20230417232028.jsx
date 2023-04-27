@@ -120,7 +120,8 @@ const Header = () => {
               onClick={showMenu}
             >
               <BsList />
-            </button>         
+            </button>
+          
           </div>
           <div className="f-elements f-elements--center">
           <NavLink

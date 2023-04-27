@@ -20,7 +20,7 @@ const HomePage = () => {
    //}, [user]);
 
    //return (<h1>HomePage</h1>);
-
+};
     useEffect(() => {
      dispatch(fetchReadPokemos());
      }, []);
@@ -31,6 +31,6 @@ const HomePage = () => {
         <HomeHero pokemos = {pokemos}/>
       
     );
-};
+    ;
   
   export default HomePage;

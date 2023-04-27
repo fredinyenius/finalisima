@@ -3,10 +3,8 @@ import { BsList, BsXCircle, BsCart } from "react-icons/bs";
 import { SlLogin } from "react-icons/sl";
 import { Link, NavLink } from 'react-router-dom';
 import dragon from '../../assets/img/dragon.png';
-import useAuth from "../../hooks/useAuth";
 
 const Header = () => {
-  const { user, setUser } = useAuth();
   const header = useRef();
   const modal = useRef();
 
@@ -32,18 +30,7 @@ const Header = () => {
     <header
       className="header"
       ref={header}
-    > <ul>
-    <li>
-      <NavLink to="/">Inicio</NavLink>
-    </li>
-    <li>
-      {user ?
-        <button onClick={() => { setUser(false) }}>Logout</button>
-        :
-        <NavLink to="/login">Login</NavLink>
-      }
-    </li>
-  </ul>
+    >
       <nav className="nav">
         <div className="container f-elements f-elements--header">
           <Link to="/">
@@ -54,7 +41,6 @@ const Header = () => {
             ref={modal}
             onClick={hideMenu}
           >
-            
             <ul
               className="list list--header f-elements f-elements--responsive f-elements--center gap-md"
               onClick={e => e.stopPropagation()}
@@ -92,7 +78,7 @@ const Header = () => {
                   className={({ isActive }) => isActive ? "list__link list__link--active" : "list__link"}
                   onClick={hideMenu}
                 >
-                  <BsCart></BsCart> Carrito
+                  <BsCart></BsCart> Compra
                 </NavLink>
               </li>
               <li
@@ -102,7 +88,6 @@ const Header = () => {
                 <BsXCircle />
               </li>
             </ul>
-            
 
           </div>
           <div className="f-elements f-elements--center">
@@ -120,16 +105,19 @@ const Header = () => {
               onClick={showMenu}
             >
               <BsList />
-            </button>         
+            </button>
+          <div className="f-elements f-elements--center">
+          <SlLogin>
+
+          </SlLogin>
+          </div>
           </div>
           <div className="f-elements f-elements--center">
-          <NavLink
-                  to="/Login"
+            <BsCart>
+                  to=""
                   className={({ isActive }) => isActive ? "list__link list__link--active" : "list__link"}
                   onClick={hideMenu}
-                >
-                   <SlLogin/>  Iniciar Sesion
-          </NavLink>
+            </BsCart>
           </div>
         </div>
       </nav>

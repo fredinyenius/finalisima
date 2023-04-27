@@ -5,7 +5,6 @@ import GamePage from "../page/gamePage";
 import ActorPage from "../page/ActorPage";
 import MapaPage from "../page/MapaPage";
 import LoginPage from "../page/LoginPage";
-import RegisterPage from "../page/RegisterPage";
 import AuthValidation from "./AuthValidation";
 
 export const primaryRoute = createBrowserRouter([

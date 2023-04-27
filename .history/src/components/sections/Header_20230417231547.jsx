@@ -32,18 +32,7 @@ const Header = () => {
     <header
       className="header"
       ref={header}
-    > <ul>
-    <li>
-      <NavLink to="/">Inicio</NavLink>
-    </li>
-    <li>
-      {user ?
-        <button onClick={() => { setUser(false) }}>Logout</button>
-        :
-        <NavLink to="/login">Login</NavLink>
-      }
-    </li>
-  </ul>
+    > 
       <nav className="nav">
         <div className="container f-elements f-elements--header">
           <Link to="/">
@@ -120,7 +109,10 @@ const Header = () => {
               onClick={showMenu}
             >
               <BsList />
-            </button>         
+            </button>
+          <div className="f-elements f-elements--center">
+          
+          </div>
           </div>
           <div className="f-elements f-elements--center">
           <NavLink

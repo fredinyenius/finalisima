@@ -34,21 +34,8 @@ const LoginPage = () => {
 
   return (
     <>
-    <div >
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <h1>LoginPage</h1>
-      <form 
+      <form
         onSubmit={handleSubmitReadUser}
       >
         <input
@@ -79,8 +66,7 @@ const LoginPage = () => {
       <br />
       <br />
       {error && <span>{error.code}</span>}
-      </div>
-   </>
+    </h1>
   );
 };
 

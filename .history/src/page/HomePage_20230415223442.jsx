@@ -13,17 +13,17 @@ const HomePage = () => {
     //const { user } = useAuth();
 
 
-   //useEffect(() => {
-   //  if (user === false) {
-   //    navigate('/login');
-   //  }
-   //}, [user]);
-
-   //return (<h1>HomePage</h1>);
-
+  //  useEffect(() => {
+  //    if (user === false) {
+  //      navigate('/login');
+  //    }
+  //  }, [user]);
+  //
+  //  return (<h1>HomePage</h1>);
+  //};
     useEffect(() => {
-     dispatch(fetchReadPokemos());
-     }, []);
+      dispatch(fetchReadPokemos());
+    }, []);
     
 
     return (
@@ -31,6 +31,6 @@ const HomePage = () => {
         <HomeHero pokemos = {pokemos}/>
       
     );
-};
+    };
   
   export default HomePage;

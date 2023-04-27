@@ -48,7 +48,7 @@ const LoginPage = () => {
       <br />
       <br />
       <h1>LoginPage</h1>
-      <form 
+      <form className="elements f-elements"
         onSubmit={handleSubmitReadUser}
       >
         <input

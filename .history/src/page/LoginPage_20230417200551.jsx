@@ -34,7 +34,7 @@ const LoginPage = () => {
 
   return (
     <>
-    <div >
+    <div>
       <br />
       <br />
       <br />
@@ -48,7 +48,7 @@ const LoginPage = () => {
       <br />
       <br />
       <h1>LoginPage</h1>
-      <form 
+      <form
         onSubmit={handleSubmitReadUser}
       >
         <input
