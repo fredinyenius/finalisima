@@ -111,7 +111,7 @@ const Header = () => {
           <div className="f-elements f-elements--center">
           
                 {user ?
-        <NavLink className={({ Active }) => Active ? "list__link list__link--active" : "list__link"} onClick={() => { setUser(false) }}>Cerrar Sesion</NavLink>
+        <NavLink className={({ isActive }) => isActive ? "list__link list__link--active" : "list__link"} onClick={() => { setUser(false) }}>Cerrar Sesion</NavLink>
         :
         <NavLink to="/login" className={({ isActive }) => isActive ? "list__link list__link--active" : "list__link"}
         onClick={hideMenu}><SlLogin/>  Iniciar Sesion</NavLink>
