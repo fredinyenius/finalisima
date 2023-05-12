@@ -42,9 +42,8 @@ const LoginPage = () => {
       >
       <h1 >Iniciar Sesión</h1>
       <br />
+      <br />
       <span className="line"></span>
-      <br />
-      <br />
       <div className="input-group">
 
         <input
@@ -54,7 +53,7 @@ const LoginPage = () => {
           value={email}
           onChange={handleChangeLoginForm}
           />
-        
+        <br />
         <input
           type="password"
           name="password"
@@ -62,7 +61,7 @@ const LoginPage = () => {
           value={password}
           onChange={handleChangeLoginForm}
           />
-        
+        <br />
         <input className="btn" type="submit" value="Iniciar sesión" />
       <br />
       <Link to="/register">Crear cuenta</Link>

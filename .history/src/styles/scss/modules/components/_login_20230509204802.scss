@@ -1,0 +1,21 @@
+.body {
+  margin: 0;
+  padding: 0;  
+  font-family: montserrat;
+  background: linear-gradient(150deg, #6c3483, #58D68D);
+  height: 100ch; 
+  
+  display: flex;
+  //justify-content: center;
+  //align-items: center;
+}
+
+.formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+}

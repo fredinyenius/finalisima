@@ -51,7 +51,7 @@ const Header = () => {
                   className={({ isActive }) => isActive ? "list__link list__link--active" : "list__link"}
                   onClick={hideMenu}
                 >
-                  Productos
+                  Dragones
                 </NavLink>
               </li>
               <li>
@@ -60,7 +60,7 @@ const Header = () => {
                   className={({ isActive }) => isActive ? "list__link list__link--active" : "list__link"}
                   onClick={hideMenu}
                 >
-                  Servicios
+                  Actores
                 </NavLink>
               </li>
               <li>
@@ -69,7 +69,7 @@ const Header = () => {
                   className={({ isActive }) => isActive ? "list__link list__link--active" : "list__link"}
                   onClick={hideMenu}
                 >
-                  Contacto
+                  Mapa
                 </NavLink>
               </li>
               <li>

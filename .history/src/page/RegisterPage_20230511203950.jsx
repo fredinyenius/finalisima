@@ -36,18 +36,15 @@ const RegisterPage = () => {
 
   return (
     <>
-    <div className="login">
-
-      <form className="form"
+      <form
         onSubmit={handleSubmitCreateUser}
         >
         <h1>RegisterPage</h1>
         <br />
+        <br />
         <span className="line"></span>
-
-        <br />
-        <br />
         <div className="input-group">
+
         <input
           type="email"
           name="email"
@@ -55,6 +52,7 @@ const RegisterPage = () => {
           value={email}
           onChange={handleChangeRegistrationForm}
           />
+        <br />
         <input
           type="password"
           name="password"
@@ -62,14 +60,15 @@ const RegisterPage = () => {
           value={password}
           onChange={handleChangeRegistrationForm}
           />
-        <input className="btn" type="submit" value="Registrar" />
+        <br />
+        <br />
+        <input type="submit" value="Registrar" />
+        </div>
+      </form>
+      <br />
       <Link to="/login">Iniciar sesión</Link>
       {loading && <span>Cargando...</span>}
       {error && <span>{error.code}</span>}
-        </div>
-      </form>
-    </div>
-      
     </>
   );
 };

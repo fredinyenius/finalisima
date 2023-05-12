@@ -37,45 +37,38 @@ const LoginPage = () => {
     <div className="login">
     
      <br/>
-      <form className="form"
+      <form 
         onSubmit={handleSubmitReadUser}
       >
       <h1 >Iniciar Sesión</h1>
-      <br />
-      <span className="line"></span>
-      <br />
-      <br />
-      <div className="input-group">
-
         <input
           type="email"
           name="email"
           placeholder="Correo"
           value={email}
           onChange={handleChangeLoginForm}
-          />
-        
+        />
+        <br />
+        <br />
         <input
           type="password"
           name="password"
           placeholder="Contraseña"
           value={password}
           onChange={handleChangeLoginForm}
-          />
-        
-        <input className="btn" type="submit" value="Iniciar sesión" />
+        />
+        <br />
+        <br />
+        <input type="submit" value="Iniciar sesión" />
+      <br />
       <br />
       <Link to="/register">Crear cuenta</Link>
       <br />
       <br />
-      <div className="form-txt">
       {loading && <span>Cargando...</span>}
       <br />
       <br />
       {error && <span>{error.code}</span>}
-
-      </div>
-      </div>
       </form>
       </div>
    </>

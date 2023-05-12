@@ -43,9 +43,9 @@ const RegisterPage = () => {
         >
         <h1>RegisterPage</h1>
         <br />
+        <br />
         <span className="line"></span>
 
-        <br />
         <br />
         <div className="input-group">
         <input
@@ -55,6 +55,7 @@ const RegisterPage = () => {
           value={email}
           onChange={handleChangeRegistrationForm}
           />
+        <br />
         <input
           type="password"
           name="password"
@@ -62,6 +63,7 @@ const RegisterPage = () => {
           value={password}
           onChange={handleChangeRegistrationForm}
           />
+        <br />
         <input className="btn" type="submit" value="Registrar" />
       <Link to="/login">Iniciar sesión</Link>
       {loading && <span>Cargando...</span>}

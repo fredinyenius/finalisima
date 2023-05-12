@@ -1,0 +1,19 @@
+.body {
+  margin: 0;
+  padding: 0;  
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(150deg, #6c3483, #58D68D);
+  height: 100ch; 
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.for {
+    padding: 50px 55px 85px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
